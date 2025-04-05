@@ -1,0 +1,15 @@
+.navbar {
+    margin: auto;
+    width: 100%;
+    max-width: $max-width;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+
+    &>div {
+        display: flex;
+    }
+}
+
+.about {}
