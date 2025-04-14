@@ -1,20 +1,23 @@
-
+import { Link } from "react-router-dom";
 
 function Navbar() {
     return (
         <div className="navbar">
             <nav>
-                <div>
-                    <h2>Home</h2>
-                    <div className="about">
-                        <h2>About</h2>
-                        <div className="about__dropdown">
-                            <h3>About the Applicant</h3>
-                            <h3>About the Page</h3>
+                <ul>
+                    <div>
+                    <li><Link to="/">Home</Link></li>
+                    <li><Link to="/motivation">Motivation</Link></li>
+                        <div className="about">
+                            <li>About</li>
+                            <div className="about__dropdown">
+                                <li><Link to="/about-applicant">About Applicant</Link></li>
+                                <li><Link to="/about-site">About This Site</Link></li>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <h2><i class="fa-brands fa-github"></i></h2>
+                    <a href="https://github.com/Remedeae"><i className="fa-brands fa-github"></i></a>
+                </ul>
             </nav>
         </div>
     );

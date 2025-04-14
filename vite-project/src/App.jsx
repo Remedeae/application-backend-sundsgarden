@@ -1,9 +1,10 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Navbar from './Navbar.jsx';
-import Home from './pages/Home.jsx';
+import { BrowserRouter, Routes, Route } from "react-router-dom"
+import Navbar from './Navbar.jsx'
+import Home from './pages/Home.jsx'
 import AboutApplicant from './pages/AboutApplicant.jsx'
 import AboutSite from './pages/AboutSite.jsx'
 import Footer from './Footer.jsx'
+import Motivation from './pages/Motivation.jsx'
 
 function App() {
 
@@ -13,9 +14,9 @@ function App() {
         <Navbar></Navbar>
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/motivation" element={<Motivation />} />
           <Route path="/about-applicant" element={<AboutApplicant />} />
           <Route path="/about-site" element={<AboutSite />} />
-
         </Routes>
         <Footer></Footer>
       </BrowserRouter>

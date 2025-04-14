@@ -1,12 +1,12 @@
-.navbar {
+nav {
     margin: auto;
     width: 100%;
     max-width: $max-width;
 }
-nav {
+ul {
     display: flex;
     justify-content: space-between;
-
+    list-style: none;
     &>div {
         display: flex;
     }

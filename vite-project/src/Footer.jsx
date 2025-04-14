@@ -2,8 +2,8 @@
 
 function Footer() {
     return (
-        <div>
-            
+        <div className="footer">
+            <h2>Site created by Sanna-Maya Blomdahl 2025</h2>
         </div>
     );
 };

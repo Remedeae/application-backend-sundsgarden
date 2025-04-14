@@ -55,21 +55,22 @@ body, html {
   scroll-behavior: smooth;
 }
 
-.navbar {
+nav {
   margin: auto;
   width: 100%;
   max-width: 1700px;
 }
 
-nav {
+ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  list-style: none;
 }
-nav > div {
+ul > div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
