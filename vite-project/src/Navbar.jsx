@@ -6,13 +6,13 @@ function Navbar() {
             <nav>
                 <ul>
                     <div>
-                    <li><Link to="/">Home</Link></li>
-                    <li><Link to="/motivation">Motivation</Link></li>
+                    <li><Link to="/" className="link">Home</Link></li>
+                    <li><Link to="/motivation" className="link">Motivation</Link></li>
                         <div className="about">
                             <li>About</li>
                             <div className="about__dropdown">
-                                <li><Link to="/about-applicant">About Applicant</Link></li>
-                                <li><Link to="/about-site">About This Site</Link></li>
+                                <li><Link to="/about-applicant" className="link">About Applicant</Link></li>
+                                <li><Link to="/about-site" className="link">About This Site</Link></li>
                             </div>
                         </div>
                     </div>

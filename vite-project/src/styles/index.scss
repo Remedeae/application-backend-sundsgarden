@@ -1,6 +1,32 @@
 @import 'reset';
 @import 'variables';
 
+* { 
+    font-family: $font-main;
+    font-size: 1rem;
+    line-height: 1.2rem;
+    color: $color-text;
+}
+
+body {
+    max-width: $max-width;
+    width: 100%;
+    margin: auto;
+}
+h1, h2 {
+    font-family: $font-accent;
+    color: $color-accent
+}
+a {
+    text-decoration: none;
+    &:visited {  
+        color: #ce8c45;
+    }
+    &:hover {
+        color: $color-accent;
+    }
+}
+
 @import 'navbar';
 @import 'footer';
 @import 'home';

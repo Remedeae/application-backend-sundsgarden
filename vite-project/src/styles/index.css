@@ -55,13 +55,47 @@ body, html {
   scroll-behavior: smooth;
 }
 
-nav {
-  margin: auto;
-  width: 100%;
-  max-width: 1700px;
+* {
+  font-family: "Mulish", sans-serif;
+  font-size: 1rem;
+  line-height: 1.2rem;
+  color: #484640;
 }
 
-ul {
+body {
+  max-width: 1700px;
+  width: 100%;
+  margin: auto;
+}
+
+h1, h2 {
+  font-family: "Philosopher", sans-serif;
+  color: #bf4614;
+}
+
+a {
+  text-decoration: none;
+}
+a:visited {
+  color: #ce8c45;
+}
+a:hover {
+  color: #bf4614;
+}
+
+nav {
+  position: sticky;
+  padding: 1rem 1.4rem;
+  z-index: 1;
+}
+nav * {
+  font-size: 1.2rem;
+}
+nav:hover {
+  -webkit-box-shadow: 0.1rem solid #484640;
+          box-shadow: 0.1rem solid #484640;
+}
+nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -70,8 +104,36 @@ ul {
           justify-content: space-between;
   list-style: none;
 }
-ul > div {
+nav ul .link {
+  color: #484640;
+}
+nav ul .link:hover {
+  color: #bf4614;
+}
+nav ul .fa-brands {
+  font-size: 2rem;
+}
+nav ul > div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 400px;
+  width: 100%;
+}
+nav .about {
+  max-width: 145px;
+  width: 100%;
+}
+nav .about__dropdown {
+  display: none;
+  position: absolute;
+  z-index: 2;
+  padding: 0.3rem 0;
+  background-color: #fce5cd;
+}
+nav .about:hover .about__dropdown {
+  display: block;
 }
