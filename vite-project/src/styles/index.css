@@ -71,6 +71,7 @@ body {
 h1, h2 {
   font-family: "Philosopher", sans-serif;
   font-size: 2.4rem;
+  line-height: 2.6rem;
   padding: 1.1rem 0;
 }
 
@@ -102,9 +103,12 @@ a:hover {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  height: 300px;
-  background-image: url(../assets/redux-of-the-inifite.jpg);
-  background-position: top 10% right 60%;
+  max-width: 1700px;
+  width: 100%;
+  height: 400px;
+  background-image: url(../assets/background.jpg);
+  background-size: cover;
+  background-position: top 30% right 50%;
 }
 .banner h1 {
   font-size: 3.5rem;
@@ -122,10 +126,6 @@ nav {
 }
 nav * {
   font-size: 1.2rem;
-}
-nav:hover {
-  -webkit-box-shadow: 0.1rem solid #484640;
-          box-shadow: 0.1rem solid #484640;
 }
 nav ul {
   display: -webkit-box;
@@ -167,12 +167,69 @@ nav .about__dropdown {
   position: absolute;
   z-index: 3;
   padding: 0.3rem 0;
-  background-color: #fce5cd;
 }
 nav .about:hover .about__dropdown {
   display: block;
 }
 
+.footer {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#cceeea), to(#659392));
+  background-image: linear-gradient(#cceeea, #659392);
+}
+.footer h4 {
+  font-weight: 300;
+  font-family: "Philosopher", sans-serif;
+  padding: 0.5rem 1rem;
+}
+
+.home {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 900px;
+  background-image: url(../assets/background.jpg);
+  background-size: cover;
+  background-position: 50%;
+}
+.home * {
+  color: #bf4614;
+  text-align: center;
+}
+.home h1 {
+  font-size: 4.8rem;
+  line-height: 5rem;
+}
+.home p {
+  color: #659392;
+  font-size: 1.8rem;
+  line-height: 2rem;
+}
+
+.about-site {
+  background-color: #fce5cd;
+}
+.about-site div {
+  padding: 20px;
+}
+
+.about-applicant p {
+  max-width: 800px;
+}
+.about-applicant img {
+  border-radius: 20px;
+  -webkit-box-shadow: #484640 6px 6px 8px;
+          box-shadow: #484640 6px 6px 8px;
+}
 .about-applicant__presentation, .about-applicant__creator {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -185,6 +242,30 @@ nav .about:hover .about__dropdown {
           align-items: start;
   padding: 25px;
   background-color: #fce5cd;
+}
+.about-applicant__presentation div:first-child {
+  padding: 10px;
+}
+.about-applicant__presentation p {
+  max-width: 1000px;
+}
+.about-applicant__presentation .profile-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  max-width: 700px;
+  width: 40%;
+  margin: 10px;
+}
+.about-applicant__presentation img {
+  max-width: 400px;
+  width: 100%;
 }
 .about-applicant__creator .cosplay-img {
   display: -webkit-box;
@@ -199,9 +280,6 @@ nav .about:hover .about__dropdown {
 }
 .about-applicant__creator img {
   width: 90%;
-  border-radius: 20px;
-  -webkit-box-shadow: #484640 6px 6px 8px;
-          box-shadow: #484640 6px 6px 8px;
   margin: 10px;
 }
 .about-applicant i {
@@ -209,6 +287,32 @@ nav .about:hover .about__dropdown {
   font-size: 2rem;
   color: #bf4614;
 }
-.about-applicant p {
-  max-width: 800px;
+
+.motivation {
+  background-color: #fce5cd;
+}
+.motivation .text-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+}
+.motivation__future, .motivation__study {
+  max-width: 1400px;
+  padding: 20px;
+}
+.motivation__future {
+  -ms-flex-item-align: end;
+      -ms-grid-row-align: end;
+      align-self: end;
+}
+.motivation__future h2 {
+  text-align: end;
+  padding-right: 1rem;
 }

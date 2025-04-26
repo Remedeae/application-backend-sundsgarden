@@ -11,9 +11,6 @@ nav {
         font-size: 1.2rem;
     }
 
-    &:hover {
-        box-shadow: 0.1rem solid $color-text;
-    }
     & ul {
         display: flex;
         justify-content: space-between;
@@ -49,7 +46,6 @@ nav {
             position: absolute;
             z-index: 3;
             padding: 0.3rem 0;
-            background-color: $color-light;
         }
     
         &:hover .about__dropdown {

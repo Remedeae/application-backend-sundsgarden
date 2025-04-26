@@ -4,8 +4,11 @@ function AboutSite() {
 
     return (
         <div className="about-site">
+            <div className="banner">
+                <h1>About this Site</h1>
+            </div>
             <div>
-                <h2>About this site</h2>
+                <h2>From Scratch</h2>
                 <p>
                     To start the creation of the site I installed npm via the terminal in Visual Studio Code, from there I installed Vite and created a react app with javascript as language. After this I installed the React Router DOM for navigation between the pages. The initially generated code was then cleaned up.
                 </p>
@@ -21,7 +24,7 @@ function AboutSite() {
             </div>
             <div>
                 <h3>Github</h3>
-                <p>Find more of my work on my <a href="https://github.com/Remedeae">Github</a></p>
+                <p>Find the Github reposotory for this page <a href="https://github.com/Remedeae/application-backend-sundsgarden">here</a>.</p>
             </div>
         </div>
     )

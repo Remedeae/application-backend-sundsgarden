@@ -1,6 +1,7 @@
 import img1 from '../assets/redux-of-the-inifite.jpg'
 import img2 from '../assets/river-spirit.jpg'
 import img3 from '../assets/right-between-the-eyes.jpg'
+import profile from '../assets/profile.jpg'
 import { useState } from 'react'
 
 function AboutApplicant() {
@@ -36,7 +37,9 @@ function AboutApplicant() {
                     <p>In my free time I enjoy playing video games, tabletop RPGS and making cosplays. I love creating things, so be it building a minecraft house, optimising my gameplay or figuring out how to bring an animated character into the real world, I’m there for it. I’m also the person who brings snacks to a tabletop session and when I don’t know what people like I bring one of everything.</p>
                     <p>As a person I’m caring and compassionate, striving to create harmony in a group. I’m very bubbly when I’m in a good mood, but am also not afraid to be there for the big problems. Basically I’m the moral support of a group, along with the visionary that draws up ideas and structures of things.            </p>
                 </div>
-                <img src="" alt="" />
+                <div className='profile-container'>
+                    <img src={profile} alt="Portray" />
+                </div>
             </div>
             <div className="about-applicant__creator">
                 <div className='cosplay-img'>

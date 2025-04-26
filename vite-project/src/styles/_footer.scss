@@ -1,6 +1,9 @@
 .footer {
 
-    & h2 {
-        
+    & h4 {
+        font-weight: 300;
+        font-family: $font-accent;
+        padding: 0.5rem 1rem ;        
     }
+    background-image: linear-gradient(#cceeea,$color-blue) ;
 }
