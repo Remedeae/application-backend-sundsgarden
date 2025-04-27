@@ -2,6 +2,7 @@
     & p {
         max-width: 800px;
     }
+
     & img {
         border-radius: 20px;
         box-shadow: $color-text 6px 6px 8px;
@@ -20,16 +21,18 @@
         & div:first-child {
             padding: 10px;
         }
+
         & p {
             max-width: 1000px;
         }
+
         & .profile-container {
             display: flex;
             justify-content: center;
             align-self: center;
             max-width: 700px;
             width: 40%;
-            margin: 10px;   
+            margin: 10px;
         }
 
         & img {
@@ -39,12 +42,27 @@
     }
 
     &__creator {
+        & .cosplay-container {
+            display: flex;
+            flex-direction: column;
+            padding-right: 20px;
+            max-width: 550px;
+            width: 100%;
+        }
+
         & .cosplay-img {
             display: flex;
             align-items: center;
-            max-width: 700px;
-            width: 100%;
-            padding-right: 20px;
+        }
+
+        & .cosplay-info {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            & p {
+                padding: 0.1rem;
+                text-align: center;
+            }
         }
 
         & img {
@@ -57,5 +75,9 @@
         width: 5%;
         font-size: 2rem;
         color: $color-accent;
+    }
+
+    & .disable {
+        color: #b3ad94;
     }
 }

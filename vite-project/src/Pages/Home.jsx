@@ -4,7 +4,7 @@ function Home() {
     return (
         <div className="home">
             <h1>New Horizons</h1>
-            <p>An admission to IT - Back end Developer at Sundsgården Folkhögskola</p>
+            <p>An admission to IT - Back end Developer at Sundsgårdens Folkhögskola</p>
         </div>
     );
 };

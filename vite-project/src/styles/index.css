@@ -219,7 +219,7 @@ nav .about:hover .about__dropdown {
   background-color: #fce5cd;
 }
 .about-site div {
-  padding: 20px;
+  padding: 25px;
 }
 
 .about-applicant p {
@@ -267,6 +267,18 @@ nav .about:hover .about__dropdown {
   max-width: 400px;
   width: 100%;
 }
+.about-applicant__creator .cosplay-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-right: 20px;
+  max-width: 550px;
+  width: 100%;
+}
 .about-applicant__creator .cosplay-img {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -274,9 +286,22 @@ nav .about:hover .about__dropdown {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  max-width: 700px;
-  width: 100%;
-  padding-right: 20px;
+}
+.about-applicant__creator .cosplay-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.about-applicant__creator .cosplay-info p {
+  padding: 0.1rem;
+  text-align: center;
 }
 .about-applicant__creator img {
   width: 90%;
@@ -286,6 +311,9 @@ nav .about:hover .about__dropdown {
   width: 5%;
   font-size: 2rem;
   color: #bf4614;
+}
+.about-applicant .disable {
+  color: #b3ad94;
 }
 
 .motivation {
@@ -305,7 +333,7 @@ nav .about:hover .about__dropdown {
 }
 .motivation__future, .motivation__study {
   max-width: 1400px;
-  padding: 20px;
+  padding: 25px;
 }
 .motivation__future {
   -ms-flex-item-align: end;
