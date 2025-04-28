@@ -15,9 +15,9 @@ function Motivation() {
                 </div>
                 <div className="motivation__future">
                     <h2>Why would I make a good future devleoper?</h2>
-                    <p>One of my main qualities as a developer is that I like learning new things and I’m not afraid to ask for help, even if I’ll try on my own first. I’m also always willing to help, I see it as an opportunity to improve both for myself and the person with a question.
+                    <p>One of my main qualities as a developer is that I like learning new things and I’m not afraid to ask for help, even if I’ll try on my own first. I’m also always willing to help, I see it as an opportunity to improve both for myself and the person in need of guidance.
                         <br />
-                        I’m also a person with a lot of ideas, I enjoy planning them out and building them from the ground up.
+                        I’m also a person with a lot of ideas, I enjoy planning and structuring them up.
                     </p>
                 </div>
             </div>

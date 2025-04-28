@@ -112,6 +112,7 @@ a:hover {
 }
 .banner h1 {
   font-size: 3.5rem;
+  text-align: center;
 }
 
 .navbar {
@@ -214,6 +215,16 @@ nav .about:hover .about__dropdown {
   font-size: 1.8rem;
   line-height: 2rem;
 }
+@media screen and (max-width: 450px) {
+  .home h1 {
+    font-size: 4rem;
+    line-height: 4.2rem;
+  }
+  .home p {
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+  }
+}
 
 .about-site {
   background-color: #fce5cd;
@@ -300,6 +311,8 @@ nav .about:hover .about__dropdown {
           align-items: center;
 }
 .about-applicant__creator .cosplay-info p {
+  font-family: "Philosopher", sans-serif;
+  font-weight: 600;
   padding: 0.1rem;
   text-align: center;
 }
@@ -314,6 +327,25 @@ nav .about:hover .about__dropdown {
 }
 .about-applicant .disable {
   color: #b3ad94;
+}
+@media screen and (max-width: 900px) {
+  .about-applicant .about-applicant__presentation {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .about-applicant .about-applicant__creator {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .about-applicant .about-applicant__creator .cosplay-container {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
 }
 
 .motivation {
@@ -343,4 +375,19 @@ nav .about:hover .about__dropdown {
 .motivation__future h2 {
   text-align: end;
   padding-right: 1rem;
+}
+
+@media screen and (max-width: 450px) {
+  p {
+    font-size: 1rem;
+    line-height: 1.2rem;
+  }
+  .banner h1 {
+    font-size: 2.5rem;
+    line-height: 2.7rem;
+  }
+  h2 {
+    font-size: 2rem;
+    line-height: 2.2rem;
+  }
 }
